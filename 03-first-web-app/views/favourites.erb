@@ -1,0 +1,21 @@
+<html DOCTYPE html>
+<head>
+  <title>Favourites</title>
+  <style>
+  body {font-family: Georgia, serif;}
+  h1 {color: gray;}
+  h2 {color: lightblue;}
+  ul li {font-family: Helvetica, Verdana, sans-serif; line-height: 1.4em;}
+  ul li:hover {background: orange; color: white;}
+  </style>
+</head>
+<body>
+<h1>Favourites Links</h1>
+<h2>List of cool links</h2>
+<ul>
+  <% @fav_links.each do |link| %>
+    <li> <%= link %> </li>
+  <% end %>
+</ul>
+</body>
+</html>
